@@ -37,7 +37,10 @@ public class Rental {
                 if (getDaysRented() > 3)
                     amount += (getDaysRented() - 3) * 1.5;
                 break;
+        }
+        return amount;
     }
+    
     int calculateFrequentRentalPoints() {
         int points = 0;
         points++;
@@ -46,7 +49,4 @@ public class Rental {
             points++;
         return points;
     }
-        return amount;
-    }
-
 }
